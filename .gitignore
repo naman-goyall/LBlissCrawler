@@ -1,4 +1,5 @@
 latest_video.json
+chromedriver-mac-arm64
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
