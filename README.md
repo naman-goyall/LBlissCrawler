@@ -1,10 +1,10 @@
 ### README.md
 
-# Video Scraper & Notification Script
+# LBlissCrawler
 
 ## Introduction
 
-This Python script logs into the specified website, scrapes information about the latest video available, and sends email notifications if a new video is detected. The script uses Selenium for web scraping, `smtplib` for email notifications, and stores data in a JSON file to keep track of the last fetched video.
+**LBlissCrawler** is a Python script designed to automate the process of logging into the [Leela Bliss](https://leelabliss.org) website, scraping information about the latest videos, and sending email notifications if a new video is detected. This tool ensures that users are kept up-to-date with new content as it is published on the site.
 
 ---
 
@@ -25,44 +25,48 @@ This Python script logs into the specified website, scrapes information about th
 
 ## Installation
 
-1. Clone the repository:
+1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/your-repo-name.git
-   cd your-repo-name
+   git clone https://github.com/your-username/LBlissCrawler.git
+   cd LBlissCrawler
    ```
 
-2. Create a virtual environment and install dependencies:
+2. **Create a Virtual Environment**:
    ```bash
    python3 -m venv venv
    source venv/bin/activate
+   ```
+
+3. **Install Required Libraries**:
+   ```bash
    pip install -r requirements.txt
    ```
 
-3. Set up the `.env` file:
+4. **Set Up Environment Variables**:
    - Create a `.env` file in the root directory:
      ```plaintext
-     USERNAME=your-website-username
-     PASSWORD=your-website-password
+     USERNAME=your-leela-bliss-username
+     PASSWORD=your-leela-bliss-password
      EMAIL_PASSWORD=your-email-password
      ```
-   - Replace the placeholder values with actual credentials.
+   - Replace placeholders with actual credentials.
 
 ---
 
 ## Usage
 
-1. Run the script manually:
+1. **Run the Script Manually**:
    ```bash
-   python script_name.py
+   python LBlissCrawler.py
    ```
 
-2. Automate the script using a cron job (explained below).
+2. **Automate Using Cron Job** (explained below).
 
 ---
 
 ## Features
 
-- Logs into the specified website.
+- Logs into the Leela Bliss website.
 - Scrapes the latest video information.
 - Compares with the previously saved video data.
 - Sends email notifications if a new video is detected.
@@ -96,8 +100,8 @@ pip install -r requirements.txt
 1. **Environment Variables**:
    - The `.env` file should contain:
      ```plaintext
-     USERNAME=your-website-username
-     PASSWORD=your-website-password
+     USERNAME=your-leela-bliss-username
+     PASSWORD=your-leela-bliss-password
      EMAIL_PASSWORD=your-email-password
      ```
 
@@ -150,7 +154,7 @@ To automate the script:
 2. **Add the Job**:
    - Add the following line to run the script every hour:
      ```bash
-     0 * * * * /usr/bin/python3 /path/to/script_name.py
+     0 * * * * /usr/bin/python3 /path/to/LBlissCrawler.py
      ```
    - Adjust the path to your Python interpreter and script.
 
