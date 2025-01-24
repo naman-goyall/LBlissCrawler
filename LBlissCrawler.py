@@ -25,9 +25,9 @@ username = os.getenv("USERNAME")
 password = os.getenv("PASSWORD")
 
 # Email Credentials
-email_sender = "namangoyal1008@gmail.com"
+email_sender = os.getenv("MY_EMAIL")
 email_password = os.getenv("EMAIL_PASSWORD")
-email_recipient = "namangoyal1008@gmail.com"
+email_recipient = os.getenv("MY_EMAIL")
 
 # Function to send email notifications
 def send_email_notification(subject, message):
