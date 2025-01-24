@@ -103,6 +103,7 @@ pip install -r requirements.txt
      USERNAME=your-leela-bliss-username
      PASSWORD=your-leela-bliss-password
      EMAIL_PASSWORD=your-email-password
+     MY_EMAIL=you-email-address
      ```
 
 2. **Email Settings**:
