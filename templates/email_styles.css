@@ -1,0 +1,122 @@
+/* Base Styles */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    color: #333333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 40px 20px;
+    background-color: #fff8f2;
+}
+
+/* Container */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(254, 152, 65, 0.10);
+    padding: 30px;
+}
+
+/* Header */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100px;
+    padding: 10px 0 35px;
+    border-bottom: 1px solid rgba(254, 152, 65, 0.2);
+    margin-bottom: 35px;
+    position: relative;
+}
+
+.logo {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+    margin-right: 40px;
+    flex-shrink: 0;
+}
+
+.header-text {
+    flex-grow: 1;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 90px;
+    padding-top: 10px;
+}
+
+.header h1 {
+    color: #fe9841;
+    font-size: 32px;
+    font-weight: 600;
+    margin: 0;
+    line-height: 1.4;
+    padding: 0 20px;
+    letter-spacing: -0.01em;
+}
+
+/* Content */
+.content {
+    padding: 0 15px;
+}
+
+.image-container {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.image-container img {
+    width: 100%;
+    max-width: 550px;
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Button */
+.button-container {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.button {
+    display: inline-block;
+    background-color: #fe9841;
+    color: white !important;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 14px 32px;
+    border-radius: 8px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.button:hover {
+    background-color: #e88a36;
+    text-decoration: none !important;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding-top: 30px;
+    margin-top: 40px;
+    border-top: 1px solid rgba(254, 152, 65, 0.2);
+    color: #666;
+    font-size: 14px;
+}
+
+/* Links */
+a {
+    color: #fe9841;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a:hover {
+    text-decoration: underline;
+}
