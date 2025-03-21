@@ -149,7 +149,7 @@ def send_email_notification(subject, message, video_url=None):
         with smtplib.SMTP('smtp.gmail.com', 587) as server:
             server.starttls()
             server.login(email_sender, email_password)
-            recipients = [email_recipient]
+            recipients = [email_recipient, "eashan.sinha@gmail.com", "udgam.goyal10@gmail.com", "ritikagehani1107@gmail.com", "tanvishanbhag01@gmail.com", "shelly.soumya@gmail.com"]
             server.sendmail(email_sender, recipients, msg.as_string())
 
         print("✅ Email sent successfully with video thumbnail!")
