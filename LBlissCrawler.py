@@ -15,7 +15,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 import time
 
 # Selenium and Website Details
-driver_path = '/Users/namangoyal/Desktop/LBlissCrawler/chromedriver-mac-arm64/chromedriver'  # Replace with your path
+driver_path = '/Users/namangoyal/Documents/GitHub/LBlissCrawler/chromedriver-mac-arm64/chromedriver'  # Replace with your path
 login_url = "https://leelabliss.org"
 videos_url = "https://leelabliss.org/liveimagevideo.aspx"
 
@@ -45,6 +45,11 @@ def send_email_notification(subject, message):
             server.starttls()  # Secure the connection
             server.login(email_sender, email_password)
             server.sendmail(email_sender, email_recipient, msg.as_string())
+            server.sendmail(email_sender, "eashan.sinha@gmail.com", msg.as_string())
+            server.sendmail(email_sender, "udgam.goyal10@gmail.com", msg.as_string())
+            server.sendmail(email_sender, "ritikagehani1107@gmail.com", msg.as_string())
+            server.sendmail(email_sender, "tanvishanbhag01@gmail.com", msg.as_string())
+            server.sendmail(email_sender, "shelly.soumya@gmail.com", msg.as_string())
 
         print("Email sent successfully!")
     except Exception as e:
